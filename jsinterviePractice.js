@@ -120,9 +120,171 @@ Object literals
 // result2.myFun();
 // this.name="Mohd Ziya";
 // this.age=25;
-this.myName="Ziya Shameem";
-this.age =29;
-console.log(this);
+// this.myName="Ziya Shameem";
+// this.age =29;
+// console.log(this);
+
+// let Student={
+//     myName : "Mohd Ziya Shameem",
+//     age    : 29,
+//     passion:"Bakaiti",
+//     IntroducemySelf : function(){
+//         console.log(`My name is ${this.myName}, I am ${this.age} years old and my passion is ${this.passion}`);
+        
+//     }
+// }
+// let Student_1={
+//     myName : "Anas Ziya",
+//     age    : 30,
+//     passion:"S/W Engineers",
+//     IntroducemySelf : function(){
+//         console.log(`My name is ${this.myName}, I am ${this.age} years old and my passion is ${this.passion}`);
+        
+//     }
+// }
+// console.log(Student);
+// Student.IntroducemySelf();
+// console.log(Student_1);
+// Student_1.IntroducemySelf();
+// this.myName = "MOHD ZIYA";
+// this.age =26;
+// console.log(this);
+
+
+
+// function Student(name, age, passsion){
+//     this.name =name;
+//     this.age=age;
+//     this.passion=this.passion;
+//     this.greet=function() {
+//         console.log(`My name is ${this.name} and I am ${this.age} years old`);
+        
+//     }
+// }
+// let s1=new Student("Mohd Ziya", 28, "Bakaiti")
+// s1.greet();
+// let s2=new Student("Anas Shameem", 30, "S/W Engineers")
+// s2.greet();
+
+
+// let obj={
+//     myName : "Mohd Ziya",
+//     age    :26,
+//     passion: "Bakaiti",
+//     introduceMyself : myself
+// }
+
+// let obj_1={
+//     myName : "Mohammad Arbaz",
+//     age    :29,
+//     passion: "S/W Engg.",
+//     introduceMyself : myself
+// }
+
+// let obj_2={
+//     myName : "Anas Ziya ",
+//     age    :30,
+//     passion: "Application Engg.",
+//     introduceMyself : myself
+//     }
+// function myself(){
+//     console.log(`Hi all My name is ${this.myName}, I am ${this.age} years old and my passion is ${this.passion}.`);
+// }
+// obj.introduceMyself();
+// obj_1.introduceMyself();
+// obj_2.introduceMyself();
+
+
+
+// function Student(){
+//     return
+//     {
+//         myName = "Mohd Ziya";
+//     age    = 30;
+//     passion= "Bakaiti";
+//     introduceMyself = function(){
+//         console.log(`Hi all My name is ${this.myName}, I am ${this.age} years old and my passion is ${this.passion}.`);
+//     }
+//     }
+// }
+// let result=Student();
+// console.log(result)
+
+
+// function Student(m, a,p){
+//     return{
+//          m,
+//         a,
+//         p,
+//         intromyself : function(){
+//             console.log(`My name is ${this.m}, I am ${this.a} years old and my passion is ${this.p}`);
+//         }
+//     }
+// }
+// let result=Student("Anas Ziya", 28, "Bakaiti");
+// console.log(result);
+// result.intromyself();
+// let result_1=Student("Ahmad Nawaz", 33, "S/w Engg")
+// console.log(result_1);
+// result_1.intromyself();
+
+
+function Student(age, name){
+    this.name=name;
+    this.age = age;
+    this.greet=function(){
+        console.log(`My name is ${this.name} and I am ${this.age} years old.`);
+    }
+}
+let obj1=new Student(28, "Ziya");
+obj1.greet();
+console.log(obj1);
+let obj2=new Student(33, "ARBAZ");
+obj2.greet();
+console.log(obj2);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

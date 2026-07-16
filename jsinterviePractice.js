@@ -229,19 +229,42 @@ Object literals
 // result_1.intromyself();
 
 
-function Student(age, name){
-    this.name=name;
-    this.age = age;
-    this.greet=function(){
-        console.log(`My name is ${this.name} and I am ${this.age} years old.`);
-    }
-}
-let obj1=new Student(28, "Ziya");
-obj1.greet();
-console.log(obj1);
-let obj2=new Student(33, "ARBAZ");
-obj2.greet();
-console.log(obj2);
+// function Student(age, name){
+//     this.name=name;
+//     this.age = age;
+//     this.greet=function(){
+//         console.log(`My name is ${this.name} and I am ${this.age} years old.`);
+//     }
+// }
+// let obj1=new Student(28, "Ziya");
+// obj1.greet();
+// console.log(obj1);
+// let obj2=new Student(33, "ARBAZ");
+// obj2.greet();
+// console.log(obj2);
+
+// function add(a,b){
+//     return a+b;
+// }
+// console.log(add(10,20));
+// console.log(add(10,20));
+
+// let total=0;
+// function add(num){
+//     total+=num;
+//     return total;
+// }
+// console.log(add(10));
+// console.log(add(10));
+
+// console.log(function(a,b){
+// return a*b;
+// }(4,5))
+
+(function(a,b){
+    console.log(a*b);
+})(14,5);
+
 
 
 

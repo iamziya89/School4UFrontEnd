@@ -1,0 +1,8 @@
+db.cars.find(
+{
+    $or:[
+        {"fuel_type" : "Diesel"},
+        {"engine.type":"Turbocharged"}
+    ]
+}
+)

@@ -302,6 +302,243 @@ Object literals
 //     console.log(a*b*c);
 // })
 
+// function database(id, nextdata){
+//     setTimeout(()=>{
+//         console.log(id);
+//         if(nextdata){
+//             nextdata()
+//         }
+//     }, 2000)
+// }
+// console.log("Data 1:");
+
+// database(1, ()=>{
+//     console.log("Data 2:");
+    
+//     database(2,()=>{
+//         console.log("Data 3:");
+//         database(3)
+//     })
+// })
+
+
+
+// function calculate(a,b,c,callback){
+//     callback(a,b,c);
+// }
+// calculate(15,25,35, (a,b,c)=>{
+//     console.log(a+b+c);
+// })
+
+// function sum(a,b){
+//     console.log(a+b);
+// }
+// function calculate(a,b,callback){
+//     callback(a,b)
+// }
+// calculate(20,30,sum)
+
+// function database(id, nextdata){
+//     setTimeout(()=>{
+//         console.log(id);
+//         if(nextdata){
+//             console.log(nextdata);
+//         }
+//     },3000)
+// }
+// database(1,()=>{
+//     database(2,()=>{
+//         database(3)
+//     })
+// });
+
+// function database(id, nextdata){
+//     setTimeout(()=>{
+//         console.log(id);
+//         if(nextdata){
+//             nextdata();
+//         }
+//     },3000)
+// }
+// console.log("Data 1 :");
+
+// database(1,()=>{
+//     console.log("Data 2 :");
+//     database(2, ()=>{
+//         console.log("Data 3 :");
+//         database(3)
+//     })
+// })
+
+
+//  Promises
+
+// function sum(a,b){
+//     console.log(a+b);
+// }
+// function calculate(a, b, callback){
+//     callback(a,b)
+// }
+// calculate(150, 120, sum)
+
+// function calculate(a,b,c,cb){
+//     cb(a,b,c)
+// }
+// calculate(10,20,30, (a,b,c)=>{
+//     console.log(a+b+c);
+// })
+
+
+// function database(id, nextdata){
+//     setTimeout(()=>{
+//         console.log(id);
+//         if(nextdata){
+//             nextdata()
+//         }
+//     }, 3000)
+// }
+// console.log("Data 1:");
+// database(1, ()=>{
+//     console.log("Data 2:");
+//     database(2, ()=>{
+//         console.log("Data 3:");
+//         database(3, ()=>{
+//             console.log("Data 4:");
+//             database(4)
+//         })
+//     })
+// })
+
+
+// function outer(){
+//     let count =0;
+//     return function(){
+//         count++;
+//         return count;
+//     }
+// }
+// let myFun=outer()
+// console.log(myFun());
+// console.log(myFun());
+// console.log(myFun());
+
+//  function memoization(){
+//     let cache ={};
+//     return function(n){
+//         if(n in cache){
+//             console.log("Return Stored Result : ")
+//             return cache[n]
+//         }
+//         cache[n] = n*n;
+//         console.log("Calculating : ")
+//         return cache[n]
+//     }
+//  }
+//  let myFun = memoization();
+//  console.log(myFun(5));
+//  console.log(myFun(5));
+//  console.log(myFun(6));
+
+
+
+// function sum(a){
+//     return function(b){
+//         return function(c){
+//             return a+b+c;
+//         }
+//     }
+// }
+// console.log(sum(100)(20)(30));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

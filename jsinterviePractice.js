@@ -261,9 +261,55 @@ Object literals
 // return a*b;
 // }(4,5))
 
-(function(a,b){
-    console.log(a*b);
-})(14,5);
+// (function(a,b){
+//     console.log(a*b);
+// })(14,5);
+
+//  CallBack functionnnnnnnnn
+
+// const sum=(a,b)=>{
+//     console.log(a+b);
+// }
+
+// function calculate(a,b,callback){
+//     callback(a,b)
+// }
+// calculate(5,11,sum)
+
+
+// const product=(a,b,c)=>{
+//     console.log(a*b*c)
+// }
+// function calculate(a,b,c,callback){
+//     callback(a, b, c)
+// }
+// calculate(2,3,4,product)
+
+// const divide=
+
+// function product(a,b,c){
+//     console.log(a*b*c);
+// }
+// function calculate(a,b,c,callback){
+//     callback(a,b,c)
+// }
+// calculate(10,20,30,product)
+
+// function calculate(a,b,c,callback){
+//     callback(a,b,c)
+// }
+// calculate(20,30,40,(a,b,c)=>{
+//     console.log(a*b*c);
+// })
+
+
+
+
+
+
+
+
+
 
 
 

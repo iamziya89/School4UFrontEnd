@@ -451,6 +451,92 @@ Object literals
 // console.log(sum(100)(20)(30));
 
 
+// let sum=(a,b)=>{
+//     console.log(a+b);
+// }
+// let calculate = (a,b,callback) =>{
+//     callback(a,b);
+// }
+// calculate(10,20, sum)
+
+// let calculate = (a,b,cb)=>{
+//     cb(a,b)
+// }
+// calculate(20,30, (a,b)=>{
+//     console.log(a+b);
+// })
+
+
+// function database(id, nextdata){
+//     setTimeout(()=>{
+//         console.log(id);
+//         if(nextdata){
+//             nextdata();
+//         }
+//     },2000)
+// }
+// console.log("Data 1");
+// database(1, ()=>{
+//     console.log("Data 2");
+//     database(2, ()=>{
+//         console.log("Data 3");
+//         database(3, ()=>{
+//             console.log("Data 4");
+//         })
+//     })
+// })
+// console.log(p);
+// let p= new Promise((resolve, reject) => {
+//     console.log("Data");
+//     resolve(200)
+// })
+
+// function database(id){
+//     return new Promise((res,rej)=>{
+//         setTimeout(()=>{
+//             console.log("Data", id);
+            
+//             res("success")
+//         },3000)
+//     })
+// }
+// database(1).then(()=>{
+//     database(2).then(()=>{
+//         database(3).then(()=>{})
+//     })
+// })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

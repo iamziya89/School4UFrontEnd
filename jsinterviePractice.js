@@ -506,6 +506,225 @@ Object literals
 //     })
 // })
 
+// function database(id){
+//     return new Promise((res,rej)=>{
+//         setTimeout(()=>{
+//             console.log("Error", id);
+//             rej("error")
+//         },2000)
+//     })
+// }
+// database(1).catch(()=>{
+//     database(2).catch(()=>{
+//         database(3).catch(()=>{
+
+//         })
+//     })
+// })
+
+
+// function database(id,nextdata){
+//     setTimeout(()=>{
+//         console.log(id);
+//         if(nextdata){
+//             nextdata()
+//         }
+//     },2000)
+// }
+// console.log("data 1");
+// database(1,()=>{
+//     console.log("data 2");
+//     database(2,()=>{
+//         console.log("data 3");
+//         database(3,()=>{
+//             console.log("data 4");
+//         })
+//     })
+// })
+
+
+
+
+// let p=new Promise((res,rej)=>{
+//     setTimeout(()=>{
+//         rej("errors")
+//     },10000)
+// })
+
+// function database(id) {
+//     return new Promise((res, rej)=>{
+//         setTimeout(()=>{
+//             console.log("Error", id);
+//             rej('success')
+//         },2000)
+//     })
+// }
+// database(1).then(()=>{
+//     database(2).then(()=>{
+//         database(3).then(()=>{
+//             database(4)
+//         })
+//     })
+// })
+
+// database(1).catch(()=>{
+//     database(2).catch(()=>{
+//         database(3).catch(()=>{
+//             database(4)
+//         })
+//     })
+// })
+
+// async function sum(a,b){
+//     console.log(a+b);
+// }
+
+// function server(id){
+//     return new Promise((res,rej)=>{
+//         setTimeout(()=>{
+//             console.log("data",id);
+//             res("success")
+//         },2000)
+//     })
+// }
+// const result =async ()=>{
+//     await server(1)
+//     await server(2)
+//     await server(3)
+//     await server(4)
+// }
+// result();
+
+
+// async function getjokes(){
+//     let jokes= await fetch("https://official-joke-api.appspot.com/jokes/programming/random");
+//     let result = await jokes.json();
+//     console.log(result.setup+result.punchline);
+// }
+
+// async function getdata() {
+//     let jokes =await fetch('https://official-joke-api.appspot.com/jokes/programming/random');
+//     let result =await jokes.json();
+//     console.log(result[0].punchline);
+// }
+// getdata();
+
+
+// function calculate(a,b,callback){
+//     callback(a,b)
+// }
+// calculate(12,18,(a,b)=>{
+//     console.log(a+b)
+// })
+// calculate(22,28,(a,b)=>{
+//     console.log(a+b)
+// })
+
+
+
+// function getdata(id,nextdata){
+//     setTimeout(()=>{
+//         console.log(id)
+//     if(nextdata){
+//         nextdata()
+//     }
+//     },2000)
+// }
+// console.log("Data 1");
+// getdata(1,()=>{
+//     console.log("Data 2");
+//     getdata(2, ()=>{
+//         console.log("Data 3");
+//         getdata(3, ()=>{
+//             console.log("Data 3");
+//             getdata(4, ()=>{
+//                 console.log("Data 4");
+//             })
+//         })
+//     })
+    
+// })
+
+
+
+// let p=new Promise((res, rej)=>{
+//     setTimeout(()=>{
+//         rej("success")
+//     },5000)
+// })
+// p.then((r)=>{
+//     console.log(r);
+//     }).catch((err)=>{
+//         console.log(err);
+//     })
+
+// function getdata(id){
+//     return new Promise((res, rej)=>{
+//         setTimeout(()=>{
+//             console.log("Error", id);
+//             rej("reject")
+//         },3000)
+//     })
+// }
+// getdata(1).then(()=>{
+//     getdata(2).then(()=>{
+//         getdata(3).then(()=>{
+//             getdata(4).then(()=>{
+
+//             })
+//         })
+//     })
+// }).catch(()=>{
+//     getdata(11).catch(()=>{
+//         getdata(12).catch(()=>{
+//             getdata(13).catch(()=>{
+
+//             })
+//         })
+//     })
+// })
+
+let btn=document.getElementById('btn')
+async function getdata(){
+    let head=document.getElementById('head');
+    
+    let jokes =await fetch("https://official-joke-api.appspot.com/jokes/random");
+    let res=await jokes.json();
+    head.innerHTML=`${res.setup}+ <br/> ${res.punchline}`;
+}
+btn.addEventListener('click', ()=>{
+    getdata();
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

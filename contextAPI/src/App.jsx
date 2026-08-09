@@ -1,13 +1,20 @@
-import { useState } from 'react'
-
+import { useContext, useState } from 'react'
+import A from './components/A'
+import B from './components/B'
 import './App.css'
+import { MyContext } from './Mycontext';
 
 function App() {
 
+  const data = useContext(MyContext);
+
   return (
-    <>
-      <h1>I am APP Compenents</h1>
-    </>
+    <div className="bg-red-500 text-white p-4 w-100 h-100">
+      APP
+      {data}
+      <A/>
+      <B/>
+    </div>
   )
 }
 

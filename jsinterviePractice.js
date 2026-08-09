@@ -684,17 +684,55 @@ Object literals
 //     })
 // })
 
-let btn=document.getElementById('btn')
-async function getdata(){
-    let head=document.getElementById('head');
+// let btn=document.getElementById('btn')
+// async function getdata(){
+//     let head=document.getElementById('head');
     
-    let jokes =await fetch("https://official-joke-api.appspot.com/jokes/random");
-    let res=await jokes.json();
-    head.innerHTML=`${res.setup}+ <br/> ${res.punchline}`;
-}
-btn.addEventListener('click', ()=>{
-    getdata();
-})
+//     let jokes =await fetch("https://official-joke-api.appspot.com/jokes/random");
+//     let res=await jokes.json();
+//     head.innerHTML=`${res.setup}+ <br/> ${res.punchline}`;
+// }
+// btn.addEventListener('click', ()=>{
+//     getdata();
+// })
+
+
+
+// A pure function always return the same output for the same input and has no side effect.
+// function sum(a, b){
+//     return a+b;
+// }
+// console.log(sum(10, 20));
+// console.log(sum(10, 20));
+
+
+// let total =0;
+// function sum(num){
+//     total+=num;
+//     return total;
+// }
+// console.log(sum(5));
+// console.log(sum(5));
+
+// function sum(a,b){
+//     return a+b;
+// }
+// console.log(sum(10, 20));
+// console.log(sum(10, 20));
+
+// let total=0;
+// function sum(num){
+//     total+=num;
+//     return total;
+// }
+// console.log(sum(10));
+// console.log(sum(10));
+
+console.log(function(a,b){
+    return a+b;
+}(4,8));
+
+
 
 
 

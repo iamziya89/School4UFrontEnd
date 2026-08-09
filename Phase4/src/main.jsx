@@ -2,10 +2,9 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
-import { MyContext } from './Mycontext.jsx'
 
 createRoot(document.getElementById('root')).render(
-    <MyContext.Provider value={"Ziya Shameem"}>
-      <App />
-    </MyContext.Provider>
+  <StrictMode>
+    <App />
+  </StrictMode>,
 )

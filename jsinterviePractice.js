@@ -728,9 +728,102 @@ Object literals
 // console.log(sum(10));
 // console.log(sum(10));
 
-console.log(function(a,b){
-    return a+b;
-}(4,8));
+// console.log(function(a,b){
+//     return a+b;
+// }(4,8));
+
+// function greet(city, state){
+//   return ( `My name is ${this.name}, I am ${this.age} years old and i am from ${city} ${state}`)
+// }
+// const obj={
+//     name    : "MOHD ZIYA SHAMEEM",
+//     age     :  29
+// }
+// console.log(greet.call(obj, ["Delhi", "UP"]))
+
+// const person = {
+//     name : "Mohammad Ziya Shameem",
+//     age  : 34
+// }
+// function greet(city){
+//     return `Hello My name is ${this.name}, I am ${this.age} years old and I am from ${city}`
+// }
+// const newgreet = greet.bind(person);
+// console.log(newgreet("delhi"))
+
+// const person ={
+//     name  : 'ZIYA SHAMEEM',
+//     age   :  25
+// }
+// function greet(city, country){
+//     console.log(`My name is ${this.name}, I am ${this.age} years old and i am from ${city} ${country}`);
+// }
+// const newFun =greet.bind(person);
+// newFun("Tanda", "Ambedkar Nagar")
+
+
+// const obj={
+//     name  : "MOHD ZIYA",
+//     age   :25
+// }
+// function greet(city, pin){
+//     console.log(`My name is ${this.name}, I am ${this.age} years old and I m from ${city} and PIN ${pin}`)
+// }
+// const newFun = greet.bind(obj)
+// newFun("Tanda","224190")
+// console.log(this);
+
+// const user={
+// fname  : "MOHD",
+// lname : "ZIYA",
+// fullName : function(){
+// console.log(`${this.fname} ${this.lname}`)
+// }
+// }
+// user.fullName();
+
+// const user = {
+//   name: "Ziya",
+
+//   greet: () => {
+//     console.log(this.name);
+//   }
+// };
+
+// user.greet();
+
+
+// console.log(this);
+function chai(){
+  console.log(this);
+}
+chai();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

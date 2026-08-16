@@ -794,10 +794,14 @@ Object literals
 
 
 // console.log(this);
-function chai(){
-  console.log(this);
-}
-chai();
+// function chai(){
+//   console.log(this);
+// }
+// chai();
+
+
+
+
 
 
 

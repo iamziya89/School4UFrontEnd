@@ -1,5 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
+import './Navbar.css'
 
 const Navbar = () => {
   return (
@@ -20,7 +21,6 @@ const Navbar = () => {
                src="./Images/logo.png"
                alt="No Images"
                width="50px"
-               srcset=""
             />
            <h1>Code School</h1>
         </div>
@@ -58,13 +58,13 @@ const Navbar = () => {
                 }}>Holiday</Link>
             </li>
             <li>
-                <Link to="/contact-us" style={{
+                <Link to="/contact-us" className='contact-us-btn' style={{
                     textDecoration:"none",
                     color : "#323232",
                     color:"white",
                     fontSize :"20px",
                     fontWeight:"bold",
-                    background:"#8700ff",
+                    background:"#F38E1E",
                     padding:"8px 20px",
                     borderRadius:8,
                 }}>Contact Us</Link>

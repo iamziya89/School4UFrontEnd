@@ -4,6 +4,7 @@ import Teachers from './components/Teachers';
 import Holiday from './components/Holiday';
 import Contactus from './components/Contactus';
 import NotFound from './components/NotFound';
+import 'remixicon/fonts/remixicon.css'
 const App= () =>{
   return(
     <BrowserRouter>

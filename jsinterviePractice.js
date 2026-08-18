@@ -799,6 +799,65 @@ Object literals
 // }
 // chai();
 
+// fetch('https://fakestoreapi.com/products', {
+//     method : 'GET'
+// })
+
+// .then((res)=>{
+//     return res.json();
+// }).then((data)=>{
+//     console.log(data);
+// })
+// .catch((err)=>{
+//     console.log(err);
+// })
+
+// async function getData(){
+//     let res =await fetch('https://fakestoreapi.com/products');
+//     let data =await res.json()
+//     console.log(data);
+// }
+// getData();
+
+// let p= fetch('https://fakestoreapi.com/products', {method : 'GET'})
+// p
+// .then((res)=>{
+//     return res.json()
+// }).then((data)=>{
+//     console.log(data);
+// })
+// .catch((err)=>{
+//     console.log(err);
+// })
+
+
+// let p=fetch('https://jsonplaceholder.typicode.com/photos')
+// .then((res)=>{
+//     return res.json();
+// })
+// .then((data)=>{
+//     console.log(data)
+// })
+// .catch((err)=>{
+//     console.log(err)
+// })
+
+// async function getData(){
+//     let res= await fetch('https://jsonplaceholder.typicode.com/photos?_limit=100');
+//     let data =await res.json();
+//     console.log(data);
+// }
+// getData();
+
+// Data Structure
+
+
+
+
+
+
+
+
 
 
 

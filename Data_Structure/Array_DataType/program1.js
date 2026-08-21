@@ -92,8 +92,57 @@
 
 
 //  WAP to create a new function using the filter function
-let arr=[15,24, 36, 25, 100]
-let newArr = arr.filter((items)=>items%2 === 0)
-console.log(newArr);
+// let arr=[15,24, 36, 25, 100]
+// let newArr = arr.filter((items)=>items%2 === 0)
+// console.log(newArr);
+
+
+// Spread Operators
+// const arr1 =['Mohd', "Anas", "Arbaz"]
+// const arr2=["Babu", "Raju", "Danish"]
+// const arr3=["Farman", "Amaan", "Jodu"]
+// // let x=...arr1;
+// // const combineArr =[...arr1, ...arr2, ...arr3]
+// console.log([...arr1,...arr2])
+
+
+// const marks1={
+//     math :89,
+//     english :65,
+//     hindi :50
+// }
+// const marks2={
+//     computer :89,
+//     social :65,
+//     BMS :50
+// }
+// // const allMarks ={...marks1, ...marks2}
+// // console.log(allMarks);
+
+// console.log({...marks1, ...marks2});
+
+
+// function memoization(){
+//     let cache ={}
+//     return function(n){
+//         if(n in cache){
+//             console.log("Stored Result : ");
+//             return cache[n];
+//         }
+//         console.log("Calculating Result :");
+//         cache [n] =n*n;
+//         return cache[n]    
+//     }
+// }
+// let x=memoization();
+// console.log(x(5))
+// console.log(x(5))
+// console.log(x(5))
+// console.log(x(6))
+// console.log(x(6))
+
+
+
+
 
 

@@ -142,6 +142,24 @@
 // console.log(x(6))
 
 
+let arr = ["MOHD", "ZIYA", "SHAMEEM", "ANAS", "ABRAR"]
+// let temp = arr;
+// console.log(temp);
+
+// const result = arr.map((items)=>{
+//     return items==="SHAMEEM";
+// })
+// console.log(result);
+
+
+// const result = arr.filter((items)=>{
+//     return items!=="SHAMEEM";
+// })
+// console.log(result);
+
+
+
+
 
 
 

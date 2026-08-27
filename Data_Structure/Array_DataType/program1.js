@@ -36,7 +36,7 @@
 // }
 
 
-// 7. WAP to to loop all element of an arrau by suing for of loops
+// 7. WAP to to loop all element of an arrau by using for of loops
 // let arr=[21, 43, 22, 76, 109, 120]
 // for(let element of arr){
 //     console.log(element);
@@ -51,7 +51,7 @@
 // console.log(arr)
 
 
-// 9. WAP to check a particular element exist of not in the given array
+// 9. WAP to check a particular element exist or not in the given array
 
 // let arr=[21, 43, 22, 76, 109, 120]
 // let elm=43
@@ -142,7 +142,7 @@
 // console.log(x(6))
 
 
-let arr = ["MOHD", "ZIYA", "SHAMEEM", "ANAS", "ABRAR"]
+// let arr = ["MOHD", "ZIYA", "SHAMEEM", "ANAS", "ABRAR"]
 // let temp = arr;
 // console.log(temp);
 

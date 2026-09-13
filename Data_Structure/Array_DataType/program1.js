@@ -1,5 +1,4 @@
 // 1. WAP to add an element at the end of an arrays
-
 // let arr =["MOHD", "MUSHEER", "ARBAZ"];
 // arr.push("ANAS ZIYA")
 // console.log(arr);

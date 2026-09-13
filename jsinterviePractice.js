@@ -852,7 +852,105 @@ Object literals
 // Data Structure
 
 
+// Prototypes => In JavaScript, a prototype is an object that allows objects to inherit properties and methods from it. It helps us share common methods between multiple objects instead of creating a separate copy for each object.
 
+// function Student(name, age){
+//     this.name = name;
+//     this.age =age;
+//     // this.introduceMyself=function(){
+//     //     console.log(`My name is ${this.name} and my age is ${this.age}`)
+//     // }
+// }
+// let s1=new Student("MKL", 21)
+// console.log(s1)
+// // s1.introduceMyself()
+// let s2=new Student("Ziya", 25)
+// console.log(s2)
+// // s2.introduceMyself()
+// Student.prototype.introduceMyself = function(){
+//         console.log(`My name is ${this.name} and my age is ${this.age}`)
+// }
+// console.log(Student.prototype)
+
+
+
+// // 
+
+// function BankAccount(holdername, balance=0){
+//     this.holdername=holdername;
+//     this.balance=balance;
+    // this.deposit=function(){
+    //     this.balance+=balance;
+    // }
+    // this.withdraw=function(){
+    //     this.balance-=balance;
+    // }
+// }
+// BankAccount.prototype.deposit=function(balance){
+//         this.balance+=balance;
+//     }
+// BankAccount.prototype.withdraw=function(balance){
+//         this.balance-=balance;
+//     }
+// let ziyaAcc=new BankAccount("MOHD ZIYA", 1000)
+// let arbazAcc=new BankAccount("ARBAZ", 1500)
+// let anasAcc=new BankAccount("ANAS ZIYA", 2000);
+// console.log(ziyaAcc)
+// console.log(arbazAcc)
+// console.log(anasAcc)
+
+
+// Class and Object
+// class Car{
+//     constructor(name, color, milege){
+//         this.name=name;
+//         this.color=color;
+//         this.milege=milege;
+//     }
+//     stop(){
+//         return `${this.name} is STOPPING.......`;
+//     }
+//     start(){
+//         return `${this.name} STARTINGS>>>>>`;
+//     }
+// }
+// let BMW=new Car("BMW", "Red",45)
+// let Toyota=new Car("TOYOTA", "Blue",35)
+// let Eon=new Car("EON", "Black",20)
+// console.log(BMW, Toyota, Eon);
+// console.log(BMW.start())
+// console.log(BMW.stop())
+
+
+
+//  FOUR PILLERS OF OOOPS => Abstraction, Encapsulation, Inheritance, Polymorphism
+
+// 1. ABSTRACTION = Abstraction means hiding complex implementation details and showing only the essential features to the users.
+
+class Car{
+    fuel =100;
+    burnFuel(){
+        this.fuel-=1
+    }
+    start(){
+        this.burnFuel();
+        console.log("Car is Starting")
+    }
+}
+let buggati= new Car();
+buggati.burnFuel();
+buggati.burnFuel();
+buggati.burnFuel();
+buggati.burnFuel();
+buggati.burnFuel();
+console.log(buggati)
+
+
+
+
+// 2. Encapsulation = Hiding data inside objects and provide security.
+// 3. Inheritance = Using properties and methods from another object/class.
+// 4. Polymorphism = Same method behaving differently based on the objects.
 
 
 

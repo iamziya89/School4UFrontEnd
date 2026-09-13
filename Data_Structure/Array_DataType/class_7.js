@@ -106,27 +106,27 @@
 // console.log(result);
 
 
-// 7. WAP to find keys with highest value
-function highestValue(obj){
-    let max=0;
-    for(let key in obj){
-        let num =obj[key]
-        if(num>max){
-            max=num;
-        }
-    }
-    return max;
-}
-let obj={
-    a  : 15,
-    b  :10,
-    c  :19,
-    d  :8,
-    f  :5,
-    g  :23
-}
-let result = highestValue(obj)
-console.log(result)
+// // 7. WAP to find keys with highest value
+// function highestValue(obj){
+//     let max=0;
+//     for(let key in obj){
+//         let num =obj[key]
+//         if(num>max){
+//             max=num;
+//         }
+//     }
+//     return max;
+// }
+// let obj={
+//     a  : 15,
+//     b  :10,
+//     c  :19,
+//     d  :8,
+//     f  :5,
+//     g  :23
+// }
+// let result = highestValue(obj)
+// console.log(result)
 
 
 

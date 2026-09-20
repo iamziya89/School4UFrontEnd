@@ -927,23 +927,23 @@ Object literals
 
 // 1. ABSTRACTION = Abstraction means hiding complex implementation details and showing only the essential features to the users.
 
-class Car{
-    fuel =100;
-    burnFuel(){
-        this.fuel-=1
-    }
-    start(){
-        this.burnFuel();
-        console.log("Car is Starting")
-    }
-}
-let buggati= new Car();
-buggati.burnFuel();
-buggati.burnFuel();
-buggati.burnFuel();
-buggati.burnFuel();
-buggati.burnFuel();
-console.log(buggati)
+// class Car{
+//     fuel =100;
+//     burnFuel(){
+//         this.fuel-=1
+//     }
+//     start(){
+//         this.burnFuel();
+//         console.log("Car is Starting")
+//     }
+// }
+// let buggati= new Car();
+// buggati.burnFuel();
+// buggati.burnFuel();
+// buggati.burnFuel();
+// buggati.burnFuel();
+// buggati.burnFuel();
+// console.log(buggati)
 
 
 
@@ -951,6 +951,23 @@ console.log(buggati)
 // 2. Encapsulation = Hiding data inside objects and provide security.
 // 3. Inheritance = Using properties and methods from another object/class.
 // 4. Polymorphism = Same method behaving differently based on the objects.
+
+//  Swap Value without using the third Variables
+// let x=5;
+// let y=10;
+// [x,y] = [y,x]
+// console.log(x)
+// console.log(y)
+
+//  2nd Methods
+let x=5;
+let y=10;
+x=x+y;
+y=x-y
+x=x-y
+console.log(x)
+console.log(y)
+
 
 
 

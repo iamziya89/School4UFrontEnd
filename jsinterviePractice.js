@@ -952,7 +952,7 @@ Object literals
 // 3. Inheritance = Using properties and methods from another object/class.
 // 4. Polymorphism = Same method behaving differently based on the objects.
 
-//  Swap Value without using the third Variables
+// 1.  Swap Value without using the third Variables
 // let x=5;
 // let y=10;
 // [x,y] = [y,x]
@@ -960,13 +960,153 @@ Object literals
 // console.log(y)
 
 //  2nd Methods
-let x=5;
-let y=10;
-x=x+y;
-y=x-y
-x=x-y
-console.log(x)
-console.log(y)
+// let x=5;
+// let y=10;
+// x=x+y;
+// y=x-y
+// x=x-y
+// console.log(x)
+// console.log(y)
+
+
+
+
+// 2. Reverse a String without reverse method
+// pls note Reverse method doesn't work with string, it always work with array
+// let str="ZIYA"
+// let rev=""
+// for(let i=str.length-1; i>=0; i--){
+//     rev+=str[i]
+// }
+// console.log(rev)
+
+
+//  Second Method (function) to reverse string
+// function reverseString(str){
+//     let rev ="";
+//     for(let i=str.length-1; i>=0; i--){
+//         rev+=str[i]
+//     }
+//     return rev;
+// }
+// let result = reverseString("ABC")
+// console.log(result)
+
+
+// // Third Methods
+// let str="AMEEM";
+// let rev=str.split('').reverse().join("");
+// console.log(rev);
+
+// //  Check Weather string is Pallindrome or not
+// function pallindrome(str){
+//     let rev=""
+//     for(let i=str.length-1; i>=0; i--){
+//         rev+=str[i]
+//     }
+//     if(rev===str){
+//         return `${str} is a PALLINDROME`
+//     }
+//     else{
+//         return `${str} is a NOT A PALLINDROME`
+//     }
+// }
+// let result = pallindrome('1210');
+// console.log(result)
+
+
+
+
+// Count Vowel in Strings
+
+// // Sum of all natural numbers from 1 to n
+// function sumOfNaturalNumbers(num){
+//     let sum=0;
+//     for(let i=1; i<=num; i++){
+//         sum+=i
+//     }
+//     return sum;
+// }
+// let result = sumOfNaturalNumbers(6)
+// console.log(result);
+
+// //  Find the sum of digits of Numbers
+// function sumDigit(n){
+//     let sum=0;
+//     while(n>0){
+//         rem=n%10;
+//         sum+=rem;
+//         n=Math.floor(n/10);
+//     }
+//     return sum;
+// }
+// let result =sumDigit(127)
+// console.log(result);
+
+
+// // Count the number of digit in number
+// function numberOfDigit(num){
+//     let c=0;
+//     num=Math.abs(num)
+//     while(num>0){
+//         num=Math.floor(num/10)
+//         c++
+//     }
+//     return c;
+// }
+// let result = numberOfDigit(2037417)
+// console.log(result);
+
+// Given an integer x, return true if x is a pallindrome and false otherwise.
+
+// var isPallindrome=function(x){
+
+// }
+
+
+// localStorage.setItem('name', 'Ziya')
+// localStorage.setItem('AGE', '30')
+// localStorage.setItem('addValue', 'xjdgbdbd')
+// console.log(localStorage.getItem('name'));
+// console.log(localStorage.getItem('AGE'));
+// console.log(localStorage.getItem('addValue'));
+// localStorage.removeItem('addValue') //addvalue key remove ho jayegi
+// localStorage.clear() // Sab clear ho jayega
+
+// // Exact same command session storage ke liye bhi use hogi
+
+
+// localStorage.setItem('myName', 'MOHD ZIYA')
+// localStorage.setItem('age', '30')
+// localStorage.setItem('address', 'SITKAHAN TANDA AMBEDKAR NAGAR')
+// // console.log(localStorage.getItem('address'));
+// console.log(localStorage.key(0)) // Matlab 0th index pe jo key hai us key ko return karega 
+// console.log(localStorage.key(1))
+// console.log(localStorage.key(2))
+// console.log(localStorage.key(3))
+// console.log(localStorage.length); // Ye length dega
+
+
+
+// How to store diff diff data type using storage
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

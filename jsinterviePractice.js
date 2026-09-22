@@ -1090,6 +1090,70 @@ Object literals
 
 // How to store diff diff data type using storage
 
+// // Check Weather the bunber is pallindrome or not
+
+// function isPallindrome(x){
+//     let copyNum=x, reverseNum=0;
+//     while(copyNum>0){
+//         let lastNum= copyNum%10;
+//         reverseNum=reverseNum*10+lastNum;
+//         copyNum=Math.floor(copyNum/10)
+//     }
+//     return x===reverseNum
+// }
+// let result=isPallindrome(12210)
+// console.log(result);
+
+
+//  Fibonacci series
+// function fib(n){
+//     let prev=0, curr=1, next;
+//     if(n<2){
+//         return n
+//     }
+//     else{
+//         for(i=2; i<=n; i++){
+//             next=prev+curr;
+//             prev=curr;
+//             curr=next;
+//         }
+//         return `${prev}, ${curr}, ${next}`;
+//     }
+// }
+// console.log(fib(5))
+
+
+
+// //  Fibonacci series
+// let n1=0, n2=1;
+// console.log(n1);
+// console.log(n2);
+// for(var i=3; i<10; i++){
+//     var n3=n1+n2;
+//     console.log(n3)
+//     n1=n2
+//     n2=n3
+// }
+// Fibonacci Series
+function fibonacci(n) {
+    let n1 = 0;
+    let n2 = 1;
+
+    console.log(n1);
+    console.log(n2);
+
+    for (let i = 3; i <= n; i++) {
+        let n3 = n1 + n2;
+
+        console.log(n3);
+
+        n1 = n2;
+        n2 = n3;
+    }
+}
+
+fibonacci(10);
+
 
 
 

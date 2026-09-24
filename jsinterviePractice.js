@@ -1134,25 +1134,94 @@ Object literals
 //     n1=n2
 //     n2=n3
 // }
-// Fibonacci Series
-function fibonacci(n) {
-    let n1 = 0;
-    let n2 = 1;
+// // Fibonacci Series
+// function fibonacci(n) {
+//     let n1 = 0;
+//     let n2 = 1;
 
-    console.log(n1);
-    console.log(n2);
+//     console.log(n1);
+//     console.log(n2);
 
-    for (let i = 3; i <= n; i++) {
-        let n3 = n1 + n2;
+//     for (let i = 3; i <= n; i++) {
+//         let n3 = n1 + n2;
 
-        console.log(n3);
+//         console.log(n3);
 
-        n1 = n2;
-        n2 = n3;
-    }
-}
+//         n1 = n2;
+//         n2 = n3;
+//     }
+// }
 
-fibonacci(10);
+// fibonacci(10);
+
+
+
+
+
+
+//  MISSING NUMBERS
+// function missingNum(num){
+//     let sum=0;
+//     for(let i=0; i<num.length; i++){
+//         sum+=num[i]
+//     }
+//     return ((num.length)*(num.length+1)/2)-sum;
+// }
+// console.log(missingNum([0,1,2,4]));
+
+
+// //  REDUCE METHOD
+// const num=[1,2,3,4,5]
+//  let sum=0;
+//  for(let i=0; i<num.length; i++){
+//     sum+=num[i]
+//  }
+// console.log(sum);
+
+// // OOper Jo sum ka code likha hai same code humne resuce ka bhi likha hai yaha acc jo hai wo sum ka kaam kar raha hai aur 0 se initialize kiya gya hai aur currValue jo hai wo ek ek kar ke arr se nikal rahe hai
+// const num=[1,2,3,4,5]
+// let n=num.reduce((acc, currValue)=>{
+//     return acc+currValue;
+// })
+// console.log(n);
+
+
+
+
+const product=[
+    {name : "Shirts", price : 2000},
+    {name : "T-Shirts", price : 1000},
+    {name : "Jeans", price : 2500},
+    {name : "Lower", price : 500}
+]
+let sum = product.reduce((acc, product)=>{
+    return acc+product.price;
+},2000)
+console.log(sum);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

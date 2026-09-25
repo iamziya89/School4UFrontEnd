@@ -1188,16 +1188,18 @@ Object literals
 
 
 
-const product=[
-    {name : "Shirts", price : 2000},
-    {name : "T-Shirts", price : 1000},
-    {name : "Jeans", price : 2500},
-    {name : "Lower", price : 500}
-]
-let sum = product.reduce((acc, product)=>{
-    return acc+product.price;
-},2000)
-console.log(sum);
+// const product=[
+//     {name : "Shirts", price : 2000},
+//     {name : "T-Shirts", price : 1000},
+//     {name : "Jeans", price : 2500},
+//     {name : "Lower", price : 500}
+// ]
+// let sum = product.reduce((acc, product)=>{
+//     return acc+product.price;
+// },2000)
+// console.log(sum);
+
+
 
 
 

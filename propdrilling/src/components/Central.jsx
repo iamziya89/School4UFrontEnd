@@ -1,13 +1,13 @@
 import React from 'react'
 import StateGov from './StateGov'
 
-const IndianGov = () => {
+const Central = () => {
   return (
     <>
-      <h3>Indian Govt</h3>
+      <h2>Central Government</h2>
       <StateGov />
     </>
   )
 }
 
-export default IndianGov
+export default Central

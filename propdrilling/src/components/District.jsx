@@ -1,11 +1,19 @@
-import React from 'react'
-import Block from './Block'
+import React, { useContext } from 'react'
+import Tahseel from './Tahseel'
+import MyContext from '../context/Mycontext'
+// import MyState from '../context/MyState'
 
-const District = ({money, name}) => {
+const District = () => {
+    const {money,name, val, setVal} =useContext(MyContext)
   return (
     <>
-      <h3>District Level</h3>
-      <Block money={money} name={name} />
+      <h2>District Level</h2>
+      <Tahseel />
+      Name : {name} <br />
+      Money : {money} <br />
+      val : {val} <br />
+      SetVal : {setVal(2037417)}
+
     </>
   )
 }

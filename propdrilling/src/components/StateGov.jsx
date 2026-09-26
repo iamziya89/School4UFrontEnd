@@ -4,7 +4,7 @@ import District from './District'
 const StateGov = () => {
   return (
     <>
-      <h3>State Govt</h3>
+      <h2>State Government</h2>
       <District />
     </>
   )

@@ -7,3 +7,23 @@ body{
     background-color: black;
     color: white;
 }
+body h1{
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: yellow;
+}
+.box{
+    display: flex;
+    /* height: 100vh; */
+    justify-content: center;
+    /* align-items: center; */
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.box img{
+    width: 100%;
+    max-width: 300px;
+    max-height: auto;
+    border-radius: 1rem;
+    border: 2px solid yellow;
+}

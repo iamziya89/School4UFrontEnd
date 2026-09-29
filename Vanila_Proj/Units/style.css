@@ -1,0 +1,36 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    color: white;
+}
+body h1{
+    text-align: center;
+}
+.box{
+    width: 100vw;
+    height: 100vh;
+    /* height: 150%; */
+    /* margin: auto; */
+    display: flex;
+    /* flex-direction: row-reverse; */
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 5px;
+
+}
+.item{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    /* margin: 10px; */
+    text-align: center;
+    font-size: 2.5rem;
+    /* float: left; */
+    flex-grow: 3;
+}

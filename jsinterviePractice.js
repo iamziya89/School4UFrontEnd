@@ -1199,7 +1199,13 @@ Object literals
 // },2000)
 // console.log(sum);
 
-
+let obj={
+    name : "MOHD ZIYA",
+    age  : 28,
+    add  : "SITKAHAN TANDA AMBEDKAR NAGAR",
+    passion: "Backchodi"
+}
+console.log(obj)
 
 
 

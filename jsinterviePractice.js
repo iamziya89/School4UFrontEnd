@@ -1205,6 +1205,9 @@ let obj={
     add  : "SITKAHAN TANDA AMBEDKAR NAGAR",
     passion: "Backchodi"
 }
+let copyObj={...obj}
+copyObj.age =200
+console.log(copyObj)
 console.log(obj)
 
 

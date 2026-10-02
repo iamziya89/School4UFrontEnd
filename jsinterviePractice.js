@@ -1199,16 +1199,21 @@ Object literals
 // },2000)
 // console.log(sum);
 
-let obj={
-    name : "MOHD ZIYA",
-    age  : 28,
-    add  : "SITKAHAN TANDA AMBEDKAR NAGAR",
-    passion: "Backchodi"
+// let obj={
+//     name : "MOHD ZIYA",
+//     age  : 28,
+//     add  : "SITKAHAN TANDA AMBEDKAR NAGAR",
+//     passion: "Backchodi"
+// }
+// let copyObj={...obj}
+// copyObj.age =200
+// console.log(copyObj)
+// console.log(obj)
+
+function asum(...rest){
+    console.log(rest)
 }
-let copyObj={...obj}
-copyObj.age =200
-console.log(copyObj)
-console.log(obj)
+asum(10,20,30,40)
 
 
 

@@ -1220,6 +1220,36 @@ Object literals
 // let arr2=[...arr];
 // console.log(arr2);
 
+// let arr=[20,"Mohd",50];
+// let copy=arr;
+// copy.push("ADD", "Subtract");
+// console.log(arr);
+// console.log(copy);
+// let copy=[...arr];
+// copy.push("AHMAD NAWAZ", "ARBAZ");
+// console.log(copy);
+// console.log(arr);
+
+
+let str="MOHAMMADZIYA"
+let copy=[...str]
+console.log(copy)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

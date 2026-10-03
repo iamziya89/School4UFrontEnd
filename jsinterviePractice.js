@@ -1210,10 +1210,17 @@ Object literals
 // console.log(copyObj)
 // console.log(obj)
 
-function asum(...rest){
-    console.log(rest)
-}
-asum(10,20,30,40)
+// function asum(...rest){
+//     console.log(rest)
+// }
+// asum(10,20,30,40)
+
+// let arr = [20,"Mohd",50]
+// // console.log(...arr);
+// let arr2=[...arr];
+// console.log(arr2);
+
+
 
 
 

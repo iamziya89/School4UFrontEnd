@@ -1235,6 +1235,19 @@ Object literals
 // let betterDeb = myDebounce(getData, 5000);
 
 let arr=["MOHD", "ZIYA", "SHAMEEM"]
-let [first,mid, last] =arr;
-console.log(first+" "+mid+" "+last);
+let [first,...last] =arr;
+// console.log(first+" "+mid+" "+last);
+console.log(first);
+console.log(last);
+
+
+
+// let obj={
+//     myName : "MOHD",
+//     age    :32,
+//     add    :"SITKAHAN"
+// }
+// let {myName,...other}=obj;
+// console.log(myName)
+// console.log(other);
 

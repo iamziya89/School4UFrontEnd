@@ -5,10 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <!-- <link rel="stylesheet" href="./jsinterviePractice.js"> -->
+     <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            margin-left: 2rem;
+        }
+        #input_event{
+            padding: 0.4rem;
+            margin-top: 1.5rem;
+        }
+     </style>
 </head>
 <body>
-    <h1 id="head"></h1>
-    <button id="btn">Click Me</button>
+    <h1 id="head"> Input Handle</h1>
+    <!-- <button id="btn">Click Me</button> -->
+     <input type="text" id="input_event" placeholder="type something here" onkeyup="betterDeb()">
+
     <script src="./jsinterviePractice.js"></script>
 </body>
 </html>

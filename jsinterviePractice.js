@@ -36,7 +36,7 @@ Object literals
 //     passion ,
 //     introduce   :function(){
 //         // console.log(this);
-        
+
 //         console.log(`My name is ${this.myName}, I am ${this.age} years Old my passion is ${this.passion}`);
 //     }
 //     }
@@ -72,7 +72,7 @@ Object literals
 //     passion : "Bakaiti",
 //     introduceMySelf : function(){
 //         // console.log(`My name is ${this.myname}, I am ${this.age} years old and my passion is ${this.passion}`);
-//         console.log(this);  
+//         console.log(this);
 //     }
 // }
 // Student.introduceMySelf();
@@ -130,7 +130,7 @@ Object literals
 //     passion:"Bakaiti",
 //     IntroducemySelf : function(){
 //         console.log(`My name is ${this.myName}, I am ${this.age} years old and my passion is ${this.passion}`);
-        
+
 //     }
 // }
 // let Student_1={
@@ -139,7 +139,7 @@ Object literals
 //     passion:"S/W Engineers",
 //     IntroducemySelf : function(){
 //         console.log(`My name is ${this.myName}, I am ${this.age} years old and my passion is ${this.passion}`);
-        
+
 //     }
 // }
 // console.log(Student);
@@ -150,22 +150,19 @@ Object literals
 // this.age =26;
 // console.log(this);
 
-
-
 // function Student(name, age, passsion){
 //     this.name =name;
 //     this.age=age;
 //     this.passion=this.passion;
 //     this.greet=function() {
 //         console.log(`My name is ${this.name} and I am ${this.age} years old`);
-        
+
 //     }
 // }
 // let s1=new Student("Mohd Ziya", 28, "Bakaiti")
 // s1.greet();
 // let s2=new Student("Anas Shameem", 30, "S/W Engineers")
 // s2.greet();
-
 
 // let obj={
 //     myName : "Mohd Ziya",
@@ -194,8 +191,6 @@ Object literals
 // obj_1.introduceMyself();
 // obj_2.introduceMyself();
 
-
-
 // function Student(){
 //     return
 //     {
@@ -209,7 +204,6 @@ Object literals
 // }
 // let result=Student();
 // console.log(result)
-
 
 // function Student(m, a,p){
 //     return{
@@ -227,7 +221,6 @@ Object literals
 // let result_1=Student("Ahmad Nawaz", 33, "S/w Engg")
 // console.log(result_1);
 // result_1.intromyself();
-
 
 // function Student(age, name){
 //     this.name=name;
@@ -276,7 +269,6 @@ Object literals
 // }
 // calculate(5,11,sum)
 
-
 // const product=(a,b,c)=>{
 //     console.log(a*b*c)
 // }
@@ -314,14 +306,12 @@ Object literals
 
 // database(1, ()=>{
 //     console.log("Data 2:");
-    
+
 //     database(2,()=>{
 //         console.log("Data 3:");
 //         database(3)
 //     })
 // })
-
-
 
 // function calculate(a,b,c,callback){
 //     callback(a,b,c);
@@ -370,7 +360,6 @@ Object literals
 //     })
 // })
 
-
 //  Promises
 
 // function sum(a,b){
@@ -387,7 +376,6 @@ Object literals
 // calculate(10,20,30, (a,b,c)=>{
 //     console.log(a+b+c);
 // })
-
 
 // function database(id, nextdata){
 //     setTimeout(()=>{
@@ -408,7 +396,6 @@ Object literals
 //         })
 //     })
 // })
-
 
 // function outer(){
 //     let count =0;
@@ -439,8 +426,6 @@ Object literals
 //  console.log(myFun(5));
 //  console.log(myFun(6));
 
-
-
 // function sum(a){
 //     return function(b){
 //         return function(c){
@@ -449,7 +434,6 @@ Object literals
 //     }
 // }
 // console.log(sum(100)(20)(30));
-
 
 // let sum=(a,b)=>{
 //     console.log(a+b);
@@ -465,7 +449,6 @@ Object literals
 // calculate(20,30, (a,b)=>{
 //     console.log(a+b);
 // })
-
 
 // function database(id, nextdata){
 //     setTimeout(()=>{
@@ -495,7 +478,7 @@ Object literals
 //     return new Promise((res,rej)=>{
 //         setTimeout(()=>{
 //             console.log("Data", id);
-            
+
 //             res("success")
 //         },3000)
 //     })
@@ -522,7 +505,6 @@ Object literals
 //     })
 // })
 
-
 // function database(id,nextdata){
 //     setTimeout(()=>{
 //         console.log(id);
@@ -541,9 +523,6 @@ Object literals
 //         })
 //     })
 // })
-
-
-
 
 // let p=new Promise((res,rej)=>{
 //     setTimeout(()=>{
@@ -595,7 +574,6 @@ Object literals
 // }
 // result();
 
-
 // async function getjokes(){
 //     let jokes= await fetch("https://official-joke-api.appspot.com/jokes/programming/random");
 //     let result = await jokes.json();
@@ -609,7 +587,6 @@ Object literals
 // }
 // getdata();
 
-
 // function calculate(a,b,callback){
 //     callback(a,b)
 // }
@@ -619,8 +596,6 @@ Object literals
 // calculate(22,28,(a,b)=>{
 //     console.log(a+b)
 // })
-
-
 
 // function getdata(id,nextdata){
 //     setTimeout(()=>{
@@ -642,10 +617,8 @@ Object literals
 //             })
 //         })
 //     })
-    
+
 // })
-
-
 
 // let p=new Promise((res, rej)=>{
 //     setTimeout(()=>{
@@ -687,7 +660,7 @@ Object literals
 // let btn=document.getElementById('btn')
 // async function getdata(){
 //     let head=document.getElementById('head');
-    
+
 //     let jokes =await fetch("https://official-joke-api.appspot.com/jokes/random");
 //     let res=await jokes.json();
 //     head.innerHTML=`${res.setup}+ <br/> ${res.punchline}`;
@@ -696,15 +669,12 @@ Object literals
 //     getdata();
 // })
 
-
-
 // A pure function always return the same output for the same input and has no side effect.
 // function sum(a, b){
 //     return a+b;
 // }
 // console.log(sum(10, 20));
 // console.log(sum(10, 20));
-
 
 // let total =0;
 // function sum(num){
@@ -761,7 +731,6 @@ Object literals
 // const newFun =greet.bind(person);
 // newFun("Tanda", "Ambedkar Nagar")
 
-
 // const obj={
 //     name  : "MOHD ZIYA",
 //     age   :25
@@ -791,7 +760,6 @@ Object literals
 // };
 
 // user.greet();
-
 
 // console.log(this);
 // function chai(){
@@ -830,7 +798,6 @@ Object literals
 //     console.log(err);
 // })
 
-
 // let p=fetch('https://jsonplaceholder.typicode.com/photos')
 // .then((res)=>{
 //     return res.json();
@@ -850,7 +817,6 @@ Object literals
 // getData();
 
 // Data Structure
-
 
 // Prototypes => In JavaScript, a prototype is an object that allows objects to inherit properties and methods from it. It helps us share common methods between multiple objects instead of creating a separate copy for each object.
 
@@ -872,19 +838,17 @@ Object literals
 // }
 // console.log(Student.prototype)
 
-
-
-// // 
+// //
 
 // function BankAccount(holdername, balance=0){
 //     this.holdername=holdername;
 //     this.balance=balance;
-    // this.deposit=function(){
-    //     this.balance+=balance;
-    // }
-    // this.withdraw=function(){
-    //     this.balance-=balance;
-    // }
+// this.deposit=function(){
+//     this.balance+=balance;
+// }
+// this.withdraw=function(){
+//     this.balance-=balance;
+// }
 // }
 // BankAccount.prototype.deposit=function(balance){
 //         this.balance+=balance;
@@ -898,7 +862,6 @@ Object literals
 // console.log(ziyaAcc)
 // console.log(arbazAcc)
 // console.log(anasAcc)
-
 
 // Class and Object
 // class Car{
@@ -920,8 +883,6 @@ Object literals
 // console.log(BMW, Toyota, Eon);
 // console.log(BMW.start())
 // console.log(BMW.stop())
-
-
 
 //  FOUR PILLERS OF OOOPS => Abstraction, Encapsulation, Inheritance, Polymorphism
 
@@ -945,9 +906,6 @@ Object literals
 // buggati.burnFuel();
 // console.log(buggati)
 
-
-
-
 // 2. Encapsulation = Hiding data inside objects and provide security.
 // 3. Inheritance = Using properties and methods from another object/class.
 // 4. Polymorphism = Same method behaving differently based on the objects.
@@ -968,9 +926,6 @@ Object literals
 // console.log(x)
 // console.log(y)
 
-
-
-
 // 2. Reverse a String without reverse method
 // pls note Reverse method doesn't work with string, it always work with array
 // let str="ZIYA"
@@ -979,7 +934,6 @@ Object literals
 //     rev+=str[i]
 // }
 // console.log(rev)
-
 
 //  Second Method (function) to reverse string
 // function reverseString(str){
@@ -991,7 +945,6 @@ Object literals
 // }
 // let result = reverseString("ABC")
 // console.log(result)
-
 
 // // Third Methods
 // let str="AMEEM";
@@ -1013,9 +966,6 @@ Object literals
 // }
 // let result = pallindrome('1210');
 // console.log(result)
-
-
-
 
 // Count Vowel in Strings
 
@@ -1043,7 +993,6 @@ Object literals
 // let result =sumDigit(127)
 // console.log(result);
 
-
 // // Count the number of digit in number
 // function numberOfDigit(num){
 //     let c=0;
@@ -1063,7 +1012,6 @@ Object literals
 
 // }
 
-
 // localStorage.setItem('name', 'Ziya')
 // localStorage.setItem('AGE', '30')
 // localStorage.setItem('addValue', 'xjdgbdbd')
@@ -1075,18 +1023,15 @@ Object literals
 
 // // Exact same command session storage ke liye bhi use hogi
 
-
 // localStorage.setItem('myName', 'MOHD ZIYA')
 // localStorage.setItem('age', '30')
 // localStorage.setItem('address', 'SITKAHAN TANDA AMBEDKAR NAGAR')
 // // console.log(localStorage.getItem('address'));
-// console.log(localStorage.key(0)) // Matlab 0th index pe jo key hai us key ko return karega 
+// console.log(localStorage.key(0)) // Matlab 0th index pe jo key hai us key ko return karega
 // console.log(localStorage.key(1))
 // console.log(localStorage.key(2))
 // console.log(localStorage.key(3))
 // console.log(localStorage.length); // Ye length dega
-
-
 
 // How to store diff diff data type using storage
 
@@ -1104,7 +1049,6 @@ Object literals
 // let result=isPallindrome(12210)
 // console.log(result);
 
-
 //  Fibonacci series
 // function fib(n){
 //     let prev=0, curr=1, next;
@@ -1121,8 +1065,6 @@ Object literals
 //     }
 // }
 // console.log(fib(5))
-
-
 
 // //  Fibonacci series
 // let n1=0, n2=1;
@@ -1154,11 +1096,6 @@ Object literals
 
 // fibonacci(10);
 
-
-
-
-
-
 //  MISSING NUMBERS
 // function missingNum(num){
 //     let sum=0;
@@ -1168,7 +1105,6 @@ Object literals
 //     return ((num.length)*(num.length+1)/2)-sum;
 // }
 // console.log(missingNum([0,1,2,4]));
-
 
 // //  REDUCE METHOD
 // const num=[1,2,3,4,5]
@@ -1184,9 +1120,6 @@ Object literals
 //     return acc+currValue;
 // })
 // console.log(n);
-
-
-
 
 // const product=[
 //     {name : "Shirts", price : 2000},
@@ -1230,322 +1163,73 @@ Object literals
 // console.log(copy);
 // console.log(arr);
 
-
-let str="MOHAMMADZIYA"
-let copy=[...str]
-console.log(copy)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// let str="MOHAMMADZIYA"
+// let copy=[...str]
+// console.log(type of copy)
+// let arr=str.split('').reverse().join('');
+// console.log(arr);
+// let arr=["M","O","H","D"];
+// let str=arr.join('')
+// console.log(str);
+
+// function sum(...num){
+//     console.log(num)
+// }
+// sum(10,20,30)
+
+// let num = [10,20,30,40,50]
+// let [first, ...remaining]=num;
+// console.log(first);
+// console.log(remaining)
+
+// let obj={
+//     name : "MOHD ZIYA",
+//     age  : 30,
+//     add  :"Sitkahan Tanda"
+// }
+// let {name, ...args}=obj;
+// console.log(name);
+// console.log(args)
+// console.log("Hello Worlds");
+
+// let myInput = document.getElementById('input_event');
+// // console.log(myInput)
+// myInput.addEventListener("input",(e)=>{
+//     console.log(e.target.value);
+// })
+
+//  Debouncing
+// let counter=0;
+// function getData(){
+//     console.log("Api called"+counter++);
+
+// }
+// function debounce(call, delay){
+//     let timer;
+//     return function(...args){
+//         if(timer){
+//             clearTimeout(timer)
+//         }
+//         setTimeout(()=>{
+//             call();
+//         },d)
+//     }
+// }
+let counter = 0;
+function getData() {
+  console.log("API Called " + counter++);
+}
+
+function myDebounce(callback, delay) {
+  return function () {
+    let timer;
+    if (timer) {
+      clearTimeout(timer);
+    }
+    timer = setTimeout(() => {
+      callback();
+    }, delay);
+  };
+}
+
+let betterDeb = myDebounce(getData, 5000);

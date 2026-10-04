@@ -1215,21 +1215,26 @@ Object literals
 //         },d)
 //     }
 // }
-let counter = 0;
-function getData() {
-  console.log("API Called " + counter++);
-}
+// let counter = 0;
+// function getData() {
+//   console.log("API Called " + counter++);
+// }
 
-function myDebounce(callback, delay) {
-  return function () {
-    let timer;
-    if (timer) {
-      clearTimeout(timer);
-    }
-    timer = setTimeout(() => {
-      callback();
-    }, delay);
-  };
-}
+// function myDebounce(callback, delay) {
+//   return function () {
+//     let timer;
+//     if (timer) {
+//       clearTimeout(timer);
+//     }
+//     timer = setTimeout(() => {
+//       callback();
+//     }, delay);
+//   };
+// }
 
-let betterDeb = myDebounce(getData, 5000);
+// let betterDeb = myDebounce(getData, 5000);
+
+let arr=["MOHD", "ZIYA", "SHAMEEM"]
+let [first,mid, last] =arr;
+console.log(first+" "+mid+" "+last);
+

@@ -1234,11 +1234,11 @@ Object literals
 
 // let betterDeb = myDebounce(getData, 5000);
 
-let arr=["MOHD", "ZIYA", "SHAMEEM"]
-let [first,...last] =arr;
-// console.log(first+" "+mid+" "+last);
-console.log(first);
-console.log(last);
+// let arr=["MOHD", "ZIYA", "SHAMEEM"]
+// let [first,...last] =arr;
+// // console.log(first+" "+mid+" "+last);
+// console.log(first);
+// console.log(last);
 
 
 
@@ -1251,3 +1251,28 @@ console.log(last);
 // console.log(myName)
 // console.log(other);
 
+let s1={
+    myName : "MOHD ZIYA",
+    age    : 30,
+    add    : "SITKAHAN TANDA AMBEDKAR NAGAR",
+    fulladd:intro
+}
+let s2={
+    myName : "MOHD ARBAZ",
+    age    : 25,
+    add    : "MUSHAN TANDA AMBEDKAR NAGAR",
+    fulladd:intro
+}
+let s3={
+    myName : "ANAS ZIYA",
+    age    : 28,
+    add    : "ALIGANJ TANDA AMBEDKAR NAGAR",
+    fulladd:intro
+}
+function intro(){
+    console.log(`My name is ${this.myName}, and I am ${this.age} years ols and I am from ${this.add}`);
+    
+}
+s1.fulladd();
+s2.fulladd();
+s3.fulladd();

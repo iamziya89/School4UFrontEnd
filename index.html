@@ -9,22 +9,46 @@
         *{
             margin: 0;
             padding: 0;
+            margin: 0;
             box-sizing: border-box;
         }
         body{
-            margin-left: 2rem;
+           background-color: black;
+           color: white;
         }
-        #input_event{
-            padding: 0.4rem;
-            margin-top: 1.5rem;
+        .box1{
+            height: 125px;
+            width: 125px;
+            background-color: blue;
+            /* position: relative; */
+            /* top: 8rem; */
         }
+
+        .box2{
+            height: 125px;
+            width: 125px;
+            background-color: rgb(53, 237, 121);
+            position: absolute;
+            /* top: 0rem; */
+            /* left: 0rem; */
+            right: 0;
+            bottom: 0;
+        }
+        .box{
+            height: 250px;
+            width: 250px;
+            background-color: brown;
+            /* position: relative; */
+        }
+
+        
      </style>
 </head>
 <body>
-    <h1 id="head"> Input Handle</h1>
-    <!-- <button id="btn">Click Me</button> -->
-     <input type="text" id="input_event" placeholder="type something here" onkeyup="betterDeb()">
-
+    <div class="box1"></div>
+    <div class="box">
+        <div class="box2"></div>
+    </div>
     <script src="./jsinterviePractice.js"></script>
 </body>
 </html>

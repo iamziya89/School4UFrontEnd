@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react'
+import React, { use, useRef, useState } from 'react'
 
 const Index = () => {
     // const title=useRef(null)
@@ -10,15 +10,17 @@ const Index = () => {
     //     btn.current.style.marginTop="5rem"
     // }
     let input=useRef(null)
+    const [name, setName] =useState("")
     let test=() =>{
-        console.log(input.current.value);
+       setName(input.current.value);
     }
 
   return (
     <div>
       {/* <h3 ref={title}>useRef Hooks in React</h3> */}
-      <input ref={input} type="text" />
+      <input value={name} ref={input} type="text" onChange={(e)=>{setName(e.target.value)}} />
       <button onClick={test}>Click Me!</button>
+      <h1>{name}</h1>
     </div>
   )
 }
